@@ -1,10 +1,16 @@
 import './App.css';
+import AboutSection from './sections/about-section';
+import HeaderSection from './sections/header-section';
+import SkillsSection from './sections/skills-section';
 
 function App() {
   return (
     <div className="App">
-      <div>Header</div>
-      <div>skills</div>
+      <HeaderSection/>
+      <AboutSection/>
+      <SkillsSection/>
+      <div>projects</div>
+      <div>contact</div>
     </div>
   );
 }

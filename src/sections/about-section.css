@@ -1,0 +1,22 @@
+.about-section-layout{
+    padding: 30px;
+}
+
+.about-section-title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    text-decoration: underline;
+    
+}
+
+.education-information-card{
+    border: 1px solid;
+    padding: 20px;
+    width: max-content;
+}
+
+.education-info-title{
+    font-size: 27px;
+    font-weight: 600;
+}
