@@ -8,10 +8,20 @@ export default function AboutSection() {
         <div className='about-section-title'>About</div>
         <div className='about-section-content'>
             <div className='personal-details'>
-                <Person/> Name: See Toh Yee Ding
-                <Mail/> Email: <a>yeedingseetoh@gmail.com</a>
-                <Phone/> Contact NO.: +6011-1057 5487
-
+                <div className='personal-detail-row'>
+                    <span style={{fontWeight: 'bold', display: 'flex', alignItems: 'center'}}>
+                        <Person/>&thinsp;Name 
+                    </span>&emsp;See Toh Yee Ding
+                </div>
+                <div className='personal-detail-row'>
+                    <Mail/>Email: 
+                    <a>yeedingseetoh@gmail.com</a>
+                </div>
+                <div className='personal-detail-row'>
+                    <Phone/>Contact: 
+                    +6011-1057 5487
+                </div>
+                
             </div>
             <div className='education-content-layout'>
                 <div className='graduation-photo'>

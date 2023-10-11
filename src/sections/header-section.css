@@ -23,7 +23,28 @@
 }
 
 .personal-introduction{
+    flex: 70%;
+    margin: auto 0;
     font-size: 27px;
     font-weight: 500;
     color: white;
+}
+
+.personal-photo{
+    flex: 30%;
+    background-color: gray;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.header-bottom-bar-layout{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 2;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
 }

@@ -9,13 +9,16 @@ export default function HeaderSection() {
       </div>
       <div className='header-content-layout'>
           <div className='personal-introduction'>
-            | Hi, I'm <span style={{fontSize: '42px', fontWeight: 700}}>See Toh Yee Ding</span>
+            <span style={{ fontWeight: 800, color: 'red'}}>|</span>&thinsp;&thinsp;&thinsp;Hi, I'm <span style={{fontSize: '42px', fontWeight: 700}}>See Toh Yee Ding</span>
+            <br/>&emsp;I'm Developer
           </div>
           <div className='personal-photo'>
-              <img src='photos/profile picture.png' alt='profile-photo'/>
+              
           </div>
       </div>
-      
+      <div className='header-bottom-bar-layout'>
+        <div className='git-source-web'>GitHub</div>
+      </div>
     </div>
   );
 }
