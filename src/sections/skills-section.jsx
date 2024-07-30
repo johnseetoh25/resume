@@ -67,7 +67,7 @@ export default function SkillsSection() {
             itemList: [ 
                 { itemIcon: 'icons/npm-svgrepo-com.svg', itemText: 'npm' },
                 { itemIcon: 'icons/express-svgrepo-com.svg', itemText: 'Express' },
-                { itemIcon: 'icons/mongo-svgrepo-com.svg', itemText: 'MongoDB' },
+            
             ],
         },
     ];
