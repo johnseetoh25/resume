@@ -1,34 +1,15 @@
 .about-section-layout{
     padding: 30px;
+    display: flex;
+    gap: 30px;
 }
 
-.about-section-title{
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    text-decoration: underline;
-    
+.personal-about-eassy, .personal-contact{
+    flex: 50%;
 }
 
-.education-information-card{
-    border: 1px solid;
+.personal-contact{
+    background-color: cornflowerblue;
     padding: 20px;
-    width: max-content;
-}
-
-.education-info-title{
-    font-size: 27px;
-    font-weight: 600;
-}
-
-.about-section-content{
-    display: flex;
-    justify-content: space-between;
-}
-
-.personal-detail-row{
-    display: flex;
-    align-items: center;
-    font-size: 22px;
-    margin: 10px 0px;
+    border-radius: 20px;
 }

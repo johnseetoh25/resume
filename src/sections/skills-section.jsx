@@ -73,7 +73,7 @@ export default function SkillsSection() {
     ];
   return (
     <div className='skills-section-layout'>
-        <div className='skills-section-title'>Skills</div>
+        <h2>Skills</h2>
         <div className='skill-card-list-layout'>
             { skillCardsList.map((skillCard, index) => (
                 <SkillsCard 

@@ -5,35 +5,21 @@ import '../sections/about-section.css'
 export default function AboutSection() {
   return (
     <div className='about-section-layout'>
-        <div className='about-section-title'>About</div>
-        <div className='about-section-content'>
-            <div className='personal-details'>
-                <div className='personal-detail-row'>
-                    <span style={{fontWeight: 'bold', display: 'flex', alignItems: 'center'}}>
-                        <Person/>&thinsp;Name 
-                    </span>&emsp;See Toh Yee Ding
-                </div>
-                <div className='personal-detail-row'>
-                    <Mail/>Email: 
-                    <a>yeedingseetoh@gmail.com</a>
-                </div>
-                <div className='personal-detail-row'>
-                    <Phone/>Contact: 
-                    +6011-1057 5487
-                </div>
-                
-            </div>
-            <div className='education-content-layout'>
-                <div className='graduation-photo'>
-                    <img src='' alt='New Era University College Logo' />
-                    <img src='' alt='graduation-photo' />
-                    <div className='education-information-card'>
-                        <div className='education-info-title'><School/>&thinsp;New Era University College</div>
-                    </div>
-                </div>
-            </div>
+       <div className='personal-about-eassy'>
+        <h3>About Me</h3>
+        <p>A dedicated and detail-oriented Software Engineer with a Bachelor's Degree in Computer Science (Software Engineering) from New Era University College. Possess over 2 years of experience in software development, with a strong track record in delivering high-quality web and mobile applications. Skilled in various programming languages and technologies including Flutter, PHP, MySQL, Bootstrap, Angular, React, Unity, Swagger and more.</p>       
+       </div>
+
+       <div className='personal-contact'>
+        <div className='personal-detail-row'>
+            <Mail/>Email: 
+            <a>yeedingseetoh@gmail.com</a>
         </div>
-        
+        <div className='personal-detail-row'>
+            <Phone/>Contact: 
+            +6011-1057 5487
+        </div>     
+        </div>
     </div>
   )
 }

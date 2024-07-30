@@ -1,5 +1,5 @@
 .header-section-layout{
-    height: 80vh;
+    height: 60vh;
     background-color: #252525;
     position: relative;
 }
@@ -17,34 +17,27 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    width: 80%;
-    justify-content: space-between;
+    text-align: center;
     display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .personal-introduction{
-    flex: 70%;
     margin: auto 0;
     font-size: 27px;
     font-weight: 500;
     color: white;
 }
 
+span{
+    font-weight: 700;
+    font-size: 36px;
+}
+
 .personal-photo{
-    flex: 30%;
     background-color: gray;
     aspect-ratio: 1;
     border-radius: 50%;
-}
-
-.header-bottom-bar-layout{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    z-index: 2;
-    background-color: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    width: 300px;
 }
