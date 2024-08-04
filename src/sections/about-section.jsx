@@ -7,7 +7,14 @@ export default function AboutSection() {
     <div className='about-section-layout'>
        <div className='personal-about-eassy'>
         <h3>About Me</h3>
-        <p>A dedicated and detail-oriented Software Engineer with a Bachelor's Degree in Computer Science (Software Engineering) from New Era University College. Possess over 2 years of experience in software development, with a strong track record in delivering high-quality web and mobile applications. Skilled in various programming languages and technologies including Flutter, PHP, MySQL, Bootstrap, Angular, React, Unity, Swagger and more.</p>       
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum ipsam rem fugit reprehenderit est necessitatibus doloribus neque non commodi repudiandae totam, labore fuga eaque? Optio adipisci quae saepe dolorum voluptatum!
+            Perferendis doloremque inventore voluptatem pariatur quae quas et eligendi, animi aut voluptatum sunt quisquam minima quo sapiente quibusdam? Dolore consectetur ex quidem inventore. Cumque aliquam asperiores nulla labore dolore id.
+          <br /><br />
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio nisi maiores iure repellat, ducimus vitae suscipit quisquam optio incidunt ex iusto, fugit, at quam? Velit assumenda atque minima iste molestias.
+            Sapiente qui sunt eos repellat, modi harum aut doloremque nisi voluptatum explicabo unde consectetur hic laborum quo voluptatibus esse quibusdam voluptate rerum! Incidunt accusantium quaerat, dolorum natus voluptates deserunt dicta?
+            Doloremque inventore voluptate nesciunt porro eaque debitis ratione eum? Atque autem, blanditiis voluptates necessitatibus ipsam saepe aperiam illum voluptatem facilis vel maiores, aliquid nemo pariatur dolore libero molestias minus praesentium.
+        </p>       
        </div>
 
        <div className='personal-contact'>
