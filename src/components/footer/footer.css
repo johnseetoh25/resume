@@ -1,0 +1,23 @@
+.footer-layout{
+    height: 35vh;
+    background: #252525;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.person-name{
+    font-size: 27px;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
