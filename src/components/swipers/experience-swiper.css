@@ -1,0 +1,73 @@
+.education-slide-layout, .working-slide-layout, .intern-slide-layout{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slide-title{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    border-bottom: 3px solid rgb(26, 26, 26);
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.slide-contant{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 2fr;
+}
+
+.slide-contant > .left{
+    position: relative;
+}
+
+.slide-contant > .left > .photo{
+    background: darkgray;
+    aspect-ratio: 2/3;
+    width: 300px;
+}
+
+/* work experiences style */
+.work-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.work-date{
+    padding: 20px 40px 20px 0px;
+    width: 20%;
+    text-align: center;
+}
+
+.work-detail{
+    padding: 0px 0px 0px 30px;
+    width: 80%;
+}
+
+.work-detail > span{
+    display: flex;
+    align-items: center;
+}
+
+.slide-bottom{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+/* intern experience style */
+.intern-row{
+    display: flex;
+}
+
+.intern-date, .intern-detail{
+    flex: 50%;
+}

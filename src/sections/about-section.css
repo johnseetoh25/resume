@@ -1,15 +1,27 @@
 .about-section-layout{
     padding: 120px 10% 60px;
-    display: flex;
+    display: grid;
     gap: 60px;
+    grid-template-columns: 2fr 1.5fr;
 }
 
-.personal-about-eassy, .personal-contact{
-    flex: 50%;
-}
-
-.personal-contact{
-    background-color: cornflowerblue;
-    padding: 20px;
+.personal-bio{
+    padding: 20px 50px;
     border-radius: 20px;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+.personal-bio-row{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.personal-bio-row > p, label{
+    font-size: 24px;
+    margin: 5px 0px;
+}
+
+.personal-bio-row > label{
+    font-weight: 700;
 }

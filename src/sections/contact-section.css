@@ -1,0 +1,27 @@
+.contact-section-layout{
+    padding: 120px 10%;
+    background-color: #252525;
+    /* parallax */
+    background-image: url('../../public/photos/header-background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.forms-layout{
+    padding: 60px;
+    border-radius: 30px;
+    display: flex;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.hiring-layout, .contact-layout{
+    flex: 50%;
+}
+
+.hiring-form{
+    display: grid;
+    gap: 20px;
+}
