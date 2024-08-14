@@ -1,6 +1,18 @@
 .skill-section-layout{
-    background: lightgray;
-    height: 80vh;
-    padding: 60px 10%;
+    background-image: url('../../public/photos/skill-background.png');
+    height: fit-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.skill-section-content{
+    padding: 40px 10% 60px;
+    color: white;
     text-align: center;
+}
+
+.skill-swiper-layout{
+    height: 70vh;
+    width: 100%;
 }

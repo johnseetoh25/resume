@@ -105,17 +105,15 @@ function EducationSwiperSlide(){
 
 const ExperienceSwiper = () => {
   return (
-    <div className=''>
-      <Swiper className='swiper-layout'
-        modules={[Navigation, Pagination]}
-        pagination={{ clickable: true }}
-        navigation={{ clickable: true }}
-      >
-        <SwiperSlide className="slide-layout"><EducationSwiperSlide/></SwiperSlide>
-        <SwiperSlide className="slide-layout"><WorkingSwiperSlide/></SwiperSlide>
-        <SwiperSlide className="slide-layout"><InternSwiperSlide/></SwiperSlide>
-      </Swiper>
-    </div>
+    <Swiper className='swiper-layout'
+      modules={[Navigation, Pagination]}
+      pagination={{ clickable: true }}
+      navigation={{ clickable: true }}
+    >
+      <SwiperSlide className="slide-layout"><EducationSwiperSlide/></SwiperSlide>
+      <SwiperSlide className="slide-layout"><WorkingSwiperSlide/></SwiperSlide>
+      <SwiperSlide className="slide-layout"><InternSwiperSlide/></SwiperSlide>
+    </Swiper>
   )
 }
 
