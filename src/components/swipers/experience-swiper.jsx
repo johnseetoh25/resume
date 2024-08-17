@@ -1,7 +1,7 @@
 import React from 'react';
 import '../swipers/swiper-style.css';
 import '../swipers/experience-swiper.css';
-
+import 'swiper/swiper-bundle.css';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -19,10 +19,10 @@ function InternSwiperSlide(){
 
   return (
     <div className='intern-slide-layout'>
-      <div className="slide-title"><AssignmentInd style={{ fontSize: '36px' }}/>&thinsp;Internship Experience</div>
+      <div className="slide-header"><AssignmentInd style={{ fontSize: '36px' }}/>&thinsp;Internship Experience</div>
       <div className="slide-content">
-        {internExperienceList.map((internExperience) => (
-          <div className="intern-row">
+        {internExperienceList.map((internExperience, index) => (
+          <div className="intern-row" key={index}>
             <div className="intern-date"></div>
             <div className="intern-detail">
               <h3>{internExperience.internPosition}</h3>
@@ -34,6 +34,7 @@ function InternSwiperSlide(){
           </div>
         ))}
       </div>
+      <div className="slide-bottom"><Button>More Info</Button></div>
     </div>
   );
 }
@@ -46,10 +47,10 @@ function WorkingSwiperSlide(){
 
   return (
     <div className='working-slide-layout'>
-      <div className="slide-title"><Work style={{ fontSize: '36px' }}/>&thinsp;Work Experience</div>
+      <div className="slide-header"><Work style={{ fontSize: '36px' }}/>&thinsp;Work Experience</div>
       <div className="slide-content">
-        {workExperienceList.map((workExperience) => (
-          <div className='work-row'>
+        {workExperienceList.map((workExperience, index) => (
+          <div className='work-row' key={index}>
             <div className="work-date">{workExperience.startDate}&thinsp;-&thinsp;{workExperience.endDate}</div>
             <Divider orientation='vertical' flexItem/>
             <div className="work-detail">
@@ -62,10 +63,6 @@ function WorkingSwiperSlide(){
           </div>
         ))}
       </div>
-      <br />
-      <Divider/>
-      <br />
-      
       <div className='slide-bottom'><Button>More Info</Button></div>
     </div>
   );
@@ -79,26 +76,28 @@ function EducationSwiperSlide(){
 
   return (
     <div className='education-slide-layout'>
-      <div className="slide-title"><School style={{ fontSize: '36px'}}/>&thinsp;Education</div>
-      <div className="slide-contant">
-        <div className="left">
-          <div className='photo'>Photo</div>
-          <div className='tag'>tag</div>
+      <div className="slide-header"><School style={{ fontSize: '36px'}}/>&thinsp;Education</div>
+      <div className="slide-content">
+        <div className="content-grid-layout">
+          <div className="left">
+            <div className='photo'>Photo</div>
+            <div className='tag'>tag</div>
+          </div>
+          <div className="right">
+            {eduExperienceList.map((eduExperience, index) => (
+              <div key={index}>
+                <h3>{eduExperience.degree}</h3>
+                <span>{eduExperience.collegeName} | {eduExperience.startDate}-{eduExperience.endDate}</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim rerum mollitia esse explicabo! Quasi earum animi iure hic aliquid aliquam, ea ratione nihil quisquam quibusdam reprehenderit fugiat pariatur alias quam!
+                Consequuntur at exercitationem maiores repellendus quos ratione velit recusandae magnam suscipit optio dolorem sed, tempora doloremque impedit ipsa odit voluptas? Voluptatum laudantium sit eligendi, accusantium quis ipsam quod fugit eum.</p>
+                <Divider/>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="right">
-          {eduExperienceList.map((eduExperience) => (
-            <div>
-              <h3>{eduExperience.degree}</h3>
-              <span>{eduExperience.collegeName} | {eduExperience.startDate}-{eduExperience.endDate}</span>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim rerum mollitia esse explicabo! Quasi earum animi iure hic aliquid aliquam, ea ratione nihil quisquam quibusdam reprehenderit fugiat pariatur alias quam!
-              Consequuntur at exercitationem maiores repellendus quos ratione velit recusandae magnam suscipit optio dolorem sed, tempora doloremque impedit ipsa odit voluptas? Voluptatum laudantium sit eligendi, accusantium quis ipsam quod fugit eum.</p>
-              <Divider/>
-            </div>
-          ))}
-          <br />
-          <Button>More Info</Button>
-        </div>
+       
       </div>
+      <div className="slide-bottom"><Button>More Info</Button></div>
     </div>
   );
 }
@@ -109,6 +108,12 @@ const ExperienceSwiper = () => {
       modules={[Navigation, Pagination]}
       pagination={{ clickable: true }}
       navigation={{ clickable: true }}
+      loop={true}
+      spaceBetween={90}
+      slidesPerView={'auto'}
+      centeredSlides={true}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
     >
       <SwiperSlide className="slide-layout"><EducationSwiperSlide/></SwiperSlide>
       <SwiperSlide className="slide-layout"><WorkingSwiperSlide/></SwiperSlide>

@@ -1,3 +1,23 @@
 .feature-section-layout{
     padding: 60px 10%;
+    background-image: url('../../public/photos/skill-background.png');
+    color: white;
+    text-align: center;
 }
+
+.feature-listing{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 120px;
+}
+
+.feature-card-layout{
+    color: white;
+}
+
+.feature-photo{
+    aspect-ratio: 16/10;
+    background: lightblue;
+    width : 100%;
+}
+

@@ -1,13 +1,14 @@
 .education-slide-layout, .working-slide-layout, .intern-slide-layout{
-    width: 90%;
+    width: 100%;
     height: 90%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    box-shadow: 0px 1px 10px 1px rgba(25, 25, 25, 0.5);
 }
 
-.slide-title{
+.slide-header{
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 60px;
@@ -17,19 +18,20 @@
     padding: 10px 30px;
 }
 
-.slide-contant{
+/* education experience style*/
+.content-grid-layout{
     display: grid;
     align-items: center;
     justify-items: center;
     grid-template-columns: 1fr 2fr;
 }
 
-.slide-contant > .left{
+.content-grid-layout > .left{
     position: relative;
 }
 
-.slide-contant > .left > .photo{
-    background: darkgray;
+.content-grid-layout > .left > .photo{
+    background: lightblue;
     aspect-ratio: 2/3;
     width: 300px;
 }

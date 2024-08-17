@@ -26,8 +26,8 @@ export default function AboutSection() {
 
       <div className='personal-bio'>
         <h2>Personal Bios</h2>
-        {personalBioList.map((personBio) => (
-          <div className='personal-bio-row'>
+        {personalBioList.map((personBio, index) => (
+          <div className='personal-bio-row' key={index}>
             <label>{personBio.label}&thinsp;:</label><p>&emsp;{personBio.info}</p>
           </div>
         ))}
