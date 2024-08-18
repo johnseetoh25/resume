@@ -1,6 +1,7 @@
 import React from 'react';
 import '../swipers/swiper-style.css';
 import '../swipers/experience-swiper.css';
+
 import 'swiper/swiper-bundle.css';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -49,19 +50,21 @@ function WorkingSwiperSlide(){
     <div className='working-slide-layout'>
       <div className="slide-header"><Work style={{ fontSize: '36px' }}/>&thinsp;Work Experience</div>
       <div className="slide-content">
-        {workExperienceList.map((workExperience, index) => (
-          <div className='work-row' key={index}>
-            <div className="work-date">{workExperience.startDate}&thinsp;-&thinsp;{workExperience.endDate}</div>
-            <Divider orientation='vertical' flexItem/>
-            <div className="work-detail">
-              <h3>{workExperience.workPosition}</h3>
-              <span><Business/>&emsp;{workExperience.companyName}</span>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sit dolorem saepe aliquam repellendus quod unde dicta quasi nobis dolor a at totam neque, quae delectus mollitia. Atque, dolorum mollitia?
-                Amet illum reprehenderit neque quaerat assumenda possimus velit nulla animi quasi doloremque sed itaque nesciunt asperiores vitae voluptatem delectus ipsam, minima ratione eum quam facere exercitationem accusantium ex. Delectus, beatae.
-              </p>
+        <div className="work-listing-layout">
+          {workExperienceList.map((workExperience, index) => (
+            <div className='work-row' key={index}>
+              <div className="work-date">{workExperience.startDate}&thinsp;-&thinsp;{workExperience.endDate}</div>
+              <Divider orientation='vertical' flexItem/>
+              <div className="work-detail">
+                <h3>{workExperience.workPosition}</h3>
+                <span><Business/>&emsp;{workExperience.companyName}</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sit dolorem saepe aliquam repellendus quod unde dicta quasi nobis dolor a at totam neque, quae delectus mollitia. Atque, dolorum mollitia?
+                  Amet illum reprehenderit neque quaerat assumenda possimus velit nulla animi quasi doloremque sed itaque nesciunt asperiores vitae voluptatem delectus ipsam, minima ratione eum quam facere exercitationem accusantium ex. Delectus, beatae.
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}  
+        </div>
       </div>
       <div className='slide-bottom'><Button>More Info</Button></div>
     </div>
@@ -78,12 +81,12 @@ function EducationSwiperSlide(){
     <div className='education-slide-layout'>
       <div className="slide-header"><School style={{ fontSize: '36px'}}/>&thinsp;Education</div>
       <div className="slide-content">
-        <div className="content-grid-layout">
-          <div className="left">
+        <div className="edu-content-grid-layout">
+          <div className="left-content">
             <div className='photo'>Photo</div>
             <div className='tag'>tag</div>
           </div>
-          <div className="right">
+          <div className="right-content">
             {eduExperienceList.map((eduExperience, index) => (
               <div key={index}>
                 <h3>{eduExperience.degree}</h3>

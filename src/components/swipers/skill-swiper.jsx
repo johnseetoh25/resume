@@ -14,15 +14,16 @@ function SwiperSlideLayout({skillList}){
             </p>
             <div className='skill-listing'>
             {skillList.skillsListing.map((skillDetail)=>(
-                <div >
+                <div className='skill-listing-content'>
                     <div className="skill-sub-title">{skillDetail.subTitle}:</div>
-                    {skillDetail.listing.map((skillItem) => (
-                        <div className="skill-item">
-                            <div className="skill-icon"></div>
-                            <div className="skill-name">{skillItem.name}</div>
-                        </div>
-                    ))}
-                    
+                    <div className="skill-grid-listing">
+                        {skillDetail.listing.map((skillItem) => (
+                            <div className="skill-item">
+                                <div className="skill-icon"></div>
+                                <div className="skill-name">{skillItem.name}</div>
+                            </div>
+                        ))}    
+                    </div>
                 </div>
             ))}
             </div>
@@ -38,14 +39,14 @@ const SkillSwiper = () => {
             skillsListing: [
                 { subTitle: 'Proficiency in', listing: [{ icon: '', name: 'JavaScript' }, { icon: '', name: 'TypeScript' }, { icon: '', name: 'HTML' }, { icon: '', name: 'CSS' }]},
                 { subTitle: 'Experience with', listing: [{ icon: '', name: 'Java' }, { icon: '', name: 'PHP' }, {icon: '', name: 'C'}, {icon: '', name: 'C++'}] },
-                { subTitle: 'New Learning', listing: []}
+                { subTitle: 'Begining', listing: []}
             ]
         
         },
         {   skillTitle: 'Framework Dev', 
             skillsListing: [
                 { subTitle: 'Website/Browser', listing: [{ icon: '', name: 'Angular' }, { icon: '', name: 'React' }, { icon: '', name: 'Next.js' }]},
-                { subTitle: 'Mobile App', listing: [{ icon: '', name: 'React Native' }, { icon: '', name: '' }] }
+                { subTitle: 'Mobile App', listing: [{ icon: '', name: 'React Native' }, { icon: '', name: 'Flutter' }] }
             ]
         }
     ];
@@ -55,8 +56,7 @@ const SkillSwiper = () => {
             modules={[Navigation, Pagination]}
             pagination={{ clickable: true }}
             navigation={{ clickable: true }}
-            
-            spaceBetween={90}
+            spaceBetween={180}
             slidesPerView={'auto'}
             centeredSlides={true}
     >

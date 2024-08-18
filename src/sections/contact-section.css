@@ -9,20 +9,54 @@
     background-size: cover;
 }
 
-.forms-layout{
-    padding: 60px;
-    border-radius: 30px;
+.contact-card-layout{
+    background: white;
     display: flex;
-    gap: 20px;
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(5px);
+    padding: 30px 0px;
+    border-radius: 15px;
 }
 
 .hiring-layout, .contact-layout{
-    flex: 50%;
+    padding: 30px;
 }
 
-.hiring-form{
+.contact-card-title{
+    font-size: 27px;
+    font-weight: 700;
+}
+
+/* forms layout */
+.forms-layout{
+    display: flex;
+    flex-direction: column;;
+    gap: 15px;
+}
+
+/* contact listing layout */
+.contact-listing-layout{
     display: grid;
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0px 30px;
+}
+
+.contact-item-layout{
+    text-align: center;
+}
+
+.contact-item-icon{
+    aspect-ratio: 1;
+    background: lightblue;
+    border-radius: 50%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.icon-style{
+    font-size: 45px;
+    color: white;
 }

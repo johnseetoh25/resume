@@ -5,35 +5,57 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     box-shadow: 0px 1px 10px 1px rgba(25, 25, 25, 0.5);
+    border-radius: 10px;
 }
 
 .slide-header{
     font-size: 36px;
     font-weight: 700;
-    margin-bottom: 60px;
     border-bottom: 3px solid rgb(26, 26, 26);
     display: flex;
     align-items: center;
-    padding: 10px 30px;
+    padding: 0px 30px;
+    height: 10%;
+}
+
+.slide-content{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 30px;
+}
+
+.slide-bottom{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* education experience style*/
-.content-grid-layout{
+.edu-content-grid-layout{
     display: grid;
     align-items: center;
     justify-items: center;
     grid-template-columns: 1fr 2fr;
 }
 
-.content-grid-layout > .left{
+.edu-content-grid-layout > .left-content, .right-content{
     position: relative;
+    width: fit-content;
 }
 
-.content-grid-layout > .left > .photo{
+.edu-content-grid-layout > .left-content > .photo{
     background: lightblue;
     aspect-ratio: 2/3;
-    width: 300px;
+    height: 100%;
+   
 }
 
 /* work experiences style */
@@ -57,12 +79,6 @@
 .work-detail > span{
     display: flex;
     align-items: center;
-}
-
-.slide-bottom{
-    width: 100%;
-    text-align: center;
-    margin: 20px 0px;
 }
 
 /* intern experience style */

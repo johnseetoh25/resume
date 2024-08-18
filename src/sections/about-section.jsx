@@ -1,4 +1,3 @@
-import { Label, Mail, Phone } from '@mui/icons-material'
 import React from 'react';
 import '../sections/about-section.css'
 
@@ -13,15 +12,10 @@ export default function AboutSection() {
   return (
     <div className='about-section-layout'>
       <div className='personal-about-eassy'>
-        <h3>About Me</h3>
+        <h2>About Me</h2>
         <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum ipsam rem fugit reprehenderit est necessitatibus doloribus neque non commodi repudiandae totam, labore fuga eaque? Optio adipisci quae saepe dolorum voluptatum!
-            Perferendis doloremque inventore voluptatem pariatur quae quas et eligendi, animi aut voluptatum sunt quisquam minima quo sapiente quibusdam? Dolore consectetur ex quidem inventore. Cumque aliquam asperiores nulla labore dolore id.
-          <br /><br />
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio nisi maiores iure repellat, ducimus vitae suscipit quisquam optio incidunt ex iusto, fugit, at quam? Velit assumenda atque minima iste molestias.
-            Sapiente qui sunt eos repellat, modi harum aut doloremque nisi voluptatum explicabo unde consectetur hic laborum quo voluptatibus esse quibusdam voluptate rerum! Incidunt accusantium quaerat, dolorum natus voluptates deserunt dicta?
-            Doloremque inventore voluptate nesciunt porro eaque debitis ratione eum? Atque autem, blanditiis voluptates necessitatibus ipsam saepe aperiam illum voluptatem facilis vel maiores, aliquid nemo pariatur dolore libero molestias minus praesentium.
-        </p>       
+        I am a passionate Frontend Developer with a background in Software Engineering. With a degree in Computer Science from New Era University College, I've worked on various web development projects, honing my skills in building user-centric web applications. My journey in tech has been fueled by a love for creating seamless digital experiences that make a difference. Currently, I'm focused on improving my skills in modern JavaScript frameworks and contributing to innovative projects that push the boundaries of web development. In the future, I hope to lead development teams and create impactful digital solutions on a larger scale.
+        </p> 
       </div>
 
       <div className='personal-bio'>
