@@ -8,7 +8,7 @@
 .feature-listing{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 120px;
+    gap: 30px 120px;
 }
 
 .feature-card-layout{

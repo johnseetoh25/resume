@@ -18,6 +18,9 @@ const FeatureSection = () => {
         { cardTitle: 'Web Development', cardContent: '' },
         { cardTitle: 'HarmonyOS Development', cardContent: '' },
         { cardTitle: 'UI/UX Designer', cardContent: '' },
+        { cardTitle: '3D Modeling Designer', cardContent: '' },
+        { cardTitle: 'Robotics', cardContent: '' },
+        { cardTitle: 'Pet Lover', cardContent: '' },
     ];
 
   return (

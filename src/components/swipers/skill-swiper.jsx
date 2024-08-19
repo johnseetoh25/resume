@@ -43,10 +43,27 @@ const SkillSwiper = () => {
             ]
         
         },
-        {   skillTitle: 'Framework Dev', 
+        {   skillTitle: 'Front-End Framework Dev', 
             skillsListing: [
                 { subTitle: 'Website/Browser', listing: [{ icon: '', name: 'Angular' }, { icon: '', name: 'React' }, { icon: '', name: 'Next.js' }]},
                 { subTitle: 'Mobile App', listing: [{ icon: '', name: 'React Native' }, { icon: '', name: 'Flutter' }] }
+            ]
+        },
+        {   skillTitle: 'Back-End Framework Dev', 
+            skillsListing: [
+                { subTitle: 'Server Slide', listing: [{ icon: '', name: 'Node.js' }, { icon: '', name: 'Express.js' }]},
+                { subTitle: 'Database', listing: [{ icon: '', name: 'MySQL' }, { icon: '', name: 'PostgrelSQL' }] }
+            ]
+        },
+        {   skillTitle: 'Others Development', 
+            skillsListing: [
+                { subTitle: 'HarmonyOS', listing: [{ icon: '', name: 'ArkTS' }]},
+            ]
+        },
+        {   skillTitle: 'Others', 
+            skillsListing: [
+                { subTitle: '3D Modeling', listing: [{ icon: '', name: 'SketchUp' }]},
+                { subTitle: 'UI/UX Designing', listing: [{ icon: '', name: 'Figma' }, { icon: '', name: 'Adobe XD' }] }
             ]
         }
     ];
@@ -57,6 +74,7 @@ const SkillSwiper = () => {
             pagination={{ clickable: true }}
             navigation={{ clickable: true }}
             spaceBetween={180}
+            loop={true}
             slidesPerView={'auto'}
             centeredSlides={true}
     >
