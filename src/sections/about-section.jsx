@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../sections/about-section.css'
+import axios from 'axios';
 
 export default function AboutSection() {
-  const personalBioList = [
-    { label: 'Email', info: 'yeedingseetoh@gmail.com' },
-    { label: 'Phone', info: '+6011-1057 5487' },
-    { label: 'Date of Birth', info: '25/03/1998' },
-    { label: 'Nationality', info: 'Malaysian'}
-  ]
+  const [ user, setUser ] = useState({});
+  
+  useEffect(() => {
+    axios.get("http://localhost:3001/resume")
+    .then(response => {
+      setUser(response.data)
+    })
+  })
 
   return (
     <div className='about-section-layout'>
@@ -20,11 +23,14 @@ export default function AboutSection() {
 
       <div className='personal-bio'>
         <h2>Personal Bios</h2>
-        {personalBioList.map((personBio, index) => (
-          <div className='personal-bio-row' key={index}>
-            <label>{personBio.label}&thinsp;:</label><p>&emsp;{personBio.info}</p>
-          </div>
-        ))}
+        
+        <div className='personal-bio-row' >
+          <label>Email&thinsp;:</label><p>&emsp;{user.email}</p>
+          <label>Contact&thinsp;:</label><p>&emsp;{user.contact}</p>
+          <label>Date of Birth&thinsp;:</label><p>&emsp;{user.dateBirth}</p>
+          <label>Nationality&thinsp;:</label><p>&emsp;{user.nationality}</p>
+        </div>
+        
       </div>
     </div>
   )

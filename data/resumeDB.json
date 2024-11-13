@@ -1,8 +1,10 @@
 {
-    "resume":[{
+    "resume":{
         "name" : "See Toh Yee Ding",
         "email" : "yeedingseetoh@gmail.com",
-        "contact": "+6011-1057 5487"
-    }]
+        "contact": "+6011-1057 5487",
+        "nationality": "Malaysian",
+        "dateBirth" : "25/01/1998"
+    }
         
 }
